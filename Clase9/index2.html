@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Clase 9</title>
+</head>
+	<body>
+
+		<h1>chat</h1>
+
+		<input id="mensaje-persona-1" type="text">
+		<button onclick= "mostrarMensaje(document.getElementById('mensaje-persona-1').value);" id="boton-persona-1" type="button">Enviar texto</button>
+		<button onclick="()" type="buttom">Enviar imagen</button>
+
+		<br>
+		<input id="mensaje-persona-2" type="text">
+		<button onclick="mostrarMensaje(document.getElementById('mensaje-persona-1').value);" id="boton-persona-2" type="button">Enviar texto</button>
+		<button onclick="" type="buttom">Enviar imagen</button>
+
+
+		<div id="conversacion">
+		
+
+		</div>
+		
+		<script>
+
+		function mostrarMensaje(mensaje){
+			document.getElementById("conversacion").innerHTML += "<p>"
+			+ mensaje +  "</p>";
+
+		function mostrarImagen(imagen){
+			document.getElementById("conversacion").innerHTML += imagen;
+		}
+
+		}
+/*		function	mostrarmensajePersona1(){
+		document.getElementById("conversacion").innerHTML += "<p>Persona 1: Hola!</p>";
+		}
+
+		function	mostrarmensajePersona2(){
+		document.getElementById("conversacion").innerHTML += "<p>Persona 2: Hola, como estas?</p>";
+		} 
+
+*/	
+
+	
+		</script>
+
+	</body>
+	
+</html>
