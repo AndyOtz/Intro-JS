@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sanfer Messenger</title>
+</head>
+<body>
+	<h1>chat</h1>
+
+<div id="contenedor">
+
+		<input id="mensaje-persona-1" type="text">
+		<button onclick= "mostrarMensaje(document.getElementById('mensaje-persona-1').value);" id="boton-persona-1" type="button">Enviar texto</button>
+		<button onclick="()" type="buttom">Enviar imagen</button>
+
+		<br>
+		<input id="mensaje-persona-2" type="text">
+		<button onclick="mostrarMensaje(document.getElementById('mensaje-persona-1').value);" id="boton-persona-2" type="button">Enviar texto</button>
+		<button onclick="" type="buttom">Enviar imagen</button>
+
+
+
+
+
+
+
+		<div id="conversacion">
+		
+
+		</div>
+		
+		<script>
+
+		function mostrarMensaje(mensaje){
+			document.getElementById("conversacion").innerHTML += "<p>"
+			+ mensaje +  "</p>";
+
+		function mostrarImagen(imagen){
+			document.getElementById("conversacion").innerHTML += imagen;
+		}
+
+
+	</script>
+	
+</body>
+</html>
