@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<ul id="lista-empleados"></ul>
+
+	<table>
+		<thead>
+			<th>Nombre</th>
+			<th>DNI</th>
+			<th>Edad</th>
+
+		</thead>
+		
+		<tbody>
+			
+		</tbody>
+	
+	</table>
+	
+
+	<script>
+		/*var nombre1="Andrés"
+		var dni1= "36077400"
+		var edad1= "27"
+
+		var nombre2= "juan"
+		var dni2= "12123123"
+		var edad2= "70"*/
+
+		var empleados = [
+
+		{ //object
+
+			nombre: "Andrés Ortiz",
+			dni: "36077400",
+			edad: 27,
+		},
+
+		{
+
+			nombre: "Juan Perez",
+			dni: "12123123",
+			edad: 70,
+		},
+
+		{
+
+			nombre: "Pablo Perez",
+			dni: "15363636",
+			edad: 69,
+		},
+
+		{
+
+			nombre: "XXXXXXX",
+			dni: "xxxxxxx",
+			edad: 45,
+		}
+
+
+
+
+		]; //vector, array, arreglo
+
+		var lista = document.getElementById("lista-empleados");
+
+		for ( var i=0; i < empleados.; i++)
+		{
+			lista.innerHTML += "<li>" + empleados[i].nombre + "</li>";
+		}
+		alert("Fin");
+
+			
+
+
+		/*var empleado1 = { //object
+
+			nombre: "Andrés Ortiz",
+			dni: "36077400",
+			edad: 27,
+		}
+
+		var empleado2 = {
+
+			nombre: "Juan Perez",
+			dni: "12123123",
+			edad: 70,
+		}
+
+			alert("Nombre: " + empleado1.nombre + ", DNI: " +  empleado1.dni + ", edad: " + empleado1.edad);
+			
+			alert("Nombre: " + empleado2.nombre + ", DNI: " +  empleado2.dni + ", edad: " + empleado2.edad);*/
+
+		
+
+
+	</script>
+
+
+
+
+</body>
+</html>
